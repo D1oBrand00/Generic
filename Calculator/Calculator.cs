@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +6,33 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class Calculator<X,Y>
+    class Calculator<T>
     {
-        public void Mathem(X a, Y b)
+
+
+        public T Add(T a, T b)
         {
-            Console.WriteLine($"{a}+{b}={a+b}");
+            dynamic x = a;
+            dynamic y = b;
+            return x + y;
+        }
+        public T Sub(T a, T b)
+        {
+            dynamic x = a;
+            dynamic y = b;
+            return x - y;
+        }
+        public T Mult(T a, T b)
+        {
+            dynamic x = a;
+            dynamic y = b;
+            return x * y;
+        }
+        public T Div(T a, T b)
+        {
+            dynamic x = a;
+            dynamic y = b;
+            return x / y;
         }
     }
 }
